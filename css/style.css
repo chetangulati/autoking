@@ -1,3 +1,370 @@
+.shdw5 {
+  -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3); }
 
+.shdw4 {
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3); }
+
+.shdw3 {
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3); }
+
+.shdw2 {
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3); }
+
+.shdw1 {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Exo 2', sans-serif; }
+
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
+#logoCt {
+  width: 50%;
+  height: 250px;
+  background: #FFC600;
+  transform: rotate(-18deg);
+  -webkit-transform: rotate(-18deg);
+  -ms-transform: rotate(-18deg);
+  position: absolute;
+  top: -150px;
+  left: -79px;
+  z-index: 99; }
+
+#logo {
+  z-index: 100;
+  position: absolute;
+  top: 10px;
+  width: 200px;
+  left: 30px; }
+
+#a {
+  width: 50%;
+  height: 18px;
+  background: #000;
+  z-index: 98;
+  position: absolute;
+  transform: rotate(-16.5deg);
+  -ms-transform: rotate(-16.5deg);
+  -webkit-transform: rotate(-16.5deg);
+  top: 85px;
+  left: -44px; }
+
+#b {
+  width: 80%;
+  height: 152px;
+  background: #0091AA;
+  position: relative;
+  z-index: 101;
+  left: 24%;
+  -webkit-transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  transform: rotate(4deg);
+  top: -115px; }
+
+header #menu {
+  position: absolute;
+  z-index: 89;
+  background: #fff;
+  width: 100%;
+  height: 160px;
+  top: 0; }
+header .upper {
+  width: 100%;
+  margin-top: 80px;
+  height: 40px; }
+  header .upper input {
+    width: 40%;
+    left: 33%;
+    position: relative;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    font-size: 20px;
+    float: left; }
+  header .upper .loginCart {
+    position: relative;
+    left: 33%; }
+  header .upper a {
+    float: left;
+    color: #000;
+    border: 1px solid #999;
+    padding: 5px 10px;
+    font-size: 19px;
+    margin-left: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box; }
+  header .upper i {
+    color: #0091AA;
+    padding-right: 5px; }
+header .lower {
+  width: 100%;
+  height: 37px; }
+  header .lower ul {
+    margin-left: 28%;
+    list-style-type: none; }
+  header .lower li {
+    float: left;
+    cursor: pointer;
+    margin: 5px;
+    -webkit-user-select: none;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: 500; }
+header .menuBtn {
+  display: none; }
+
+#banner {
+  width: 100%;
+  height: 550px;
+  background-image: url("../images/banner.jpeg");
+  background-size: cover; }
+  #banner .filter {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); }
+  #banner .formHolder {
+    width: 100%;
+    position: relative;
+    top: 168px;
+    height: 170px;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); }
+  #banner .tagLine {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+    padding-top: 130px;
+    font-weight: 600; }
+  #banner form {
+    margin: auto;
+    width: 1020px; }
+  #banner input {
+    width: 300px;
+    float: left;
+    margin: 20px;
+    border: 0;
+    background: #fff;
+    padding: 5px 10px;
+    font-size: 18px;
+    box-sizing: border-box; }
+  #banner input[type="submit"] {
+    background: #FFC600;
+    color: #000;
+    font-weight: 600; }
+
+#topCars {
+  width: 100%;
+  height: 617px;
+  background: #fff; }
+  #topCars h2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+    color: #003a44; }
+  #topCars .hline {
+    width: 100px;
+    height: 5px;
+    background: #FFC600;
+    margin: 5px auto 20px auto; }
+  #topCars .cardHolder, #topCars .vlineHolder {
+    width: 80%;
+    margin: auto; }
+  #topCars .cardHolder {
+    height: 300px; }
+  #topCars .card {
+    width: 18%;
+    height: 300px;
+    background: #333;
+    margin: 0 1%;
+    float: left; }
+  #topCars .vlineHolder {
+    height: 200px; }
+  #topCars .vline {
+    width: 20px;
+    margin: 0 9%;
+    height: 200px;
+    float: left;
+    background: #333; }
+
+#features {
+  background: #006680;
+  width: 100%;
+  height: 650px; }
+  #features .vlineHolder {
+    height: 300px;
+    width: 80%;
+    margin: auto; }
+  #features .vline {
+    width: 20px;
+    margin: 0 9%;
+    float: left;
+    height: 300px;
+    background: #fff; }
+  #features .car img {
+    width: 80%;
+    position: relative;
+    margin: 0 10%;
+    top: -120px; }
+
+#cities {
+  width: 100%;
+  height: 700px; }
+  #cities h2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+    color: #003a44; }
+  #cities .hline {
+    width: 100px;
+    height: 5px;
+    background: #FFC600;
+    margin: 5px auto 20px auto; }
+  #cities .card {
+    width: 25.33333%;
+    margin: 4%;
+    border-radius: 10px;
+    float: left;
+    height: 400px; }
+    #cities .card img {
+      width: 90%;
+      padding: 5%; }
+    #cities .card h3 {
+      text-align: center;
+      font-size: 25px; }
+
+#why {
+  width: 100%;
+  height: 500px; }
+  #why h2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+    color: #003a44; }
+  #why .hline {
+    width: 100px;
+    height: 5px;
+    background: #FFC600;
+    margin: 5px auto; }
+  #why .left, #why .right {
+    width: 50%;
+    float: left; }
+  #why img {
+    width: 100%; }
+  #why p {
+    padding: 50px;
+    color: #333; }
+
+footer {
+  width: 100%;
+  height: 400px;
+  float: left;
+  clear: both; }
+  footer .upperfooter {
+    width: 100%;
+    height: 330px;
+    background-color: #37474f; }
+  footer .lowerfooter {
+    width: 100%;
+    height: 70px;
+    background-color: #102027;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #fff; }
+  footer .social, footer .links, footer .contact {
+    width: 33.33333%;
+    height: 330px;
+    box-sizing: border-box;
+    padding: 30px;
+    float: left; }
+    footer .social h3, footer .links h3, footer .contact h3 {
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      font-size: 25px; }
+  footer .social li {
+    display: inline-block;
+    padding: 5px; }
+  footer .social .lineone, footer .social .linetwo {
+    width: 235px;
+    margin: 20px auto;
+    box-sizing: border-box; }
+  footer .social img {
+    background: #fff; }
+  footer .links ul {
+    width: 200px;
+    padding-top: 20px;
+    margin: auto; }
+  footer .links li {
+    list-style-type: none;
+    padding: 5px;
+    display: inline-block; }
+  footer .links a {
+    color: #fff;
+    text-decoration: none; }
+  footer .contact .wrap {
+    width: 200px;
+    margin: auto;
+    padding: 20px; }
+  footer .contact h4 {
+    color: #fff; }
+  footer .contact a {
+    color: #fff;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    text-decoration: none; }
+
+@media only screen and (max-width: 1275px) {
+  #logoCt {
+    width: 63%;
+    left: -110px; }
+
+  #a {
+    width: 64%;
+    top: 76px; }
+
+  #b {
+    top: -130px;
+    left: 22%; }
+
+  #logo {
+    width: 140px; }
+
+  header .upper {
+    margin-top: 97px; }
+    header .upper a {
+      margin-left: 10px; }
+    header .upper input {
+      top: -50px;
+      left: 50%; }
+  header .lower {
+    display: none; }
+  header .menuBtn {
+    display: block;
+    float: right;
+    position: relative;
+    top: -40px;
+    padding: 6px 0;
+    right: 10px;
+    border: 1px solid #999; }
+    header .menuBtn .line {
+      width: 20px;
+      height: 3px;
+      margin: 3px 8px;
+      background: #000; } }
 
 /*# sourceMappingURL=style.css.map */
