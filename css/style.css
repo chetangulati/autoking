@@ -84,21 +84,20 @@ header .upper {
   header .upper input {
     width: 40%;
     left: 33%;
-    position: relative;
+    position: absolute;
     border: 1px solid #000;
     padding: 5px 10px;
     font-size: 20px;
     float: left; }
   header .upper .loginCart {
     position: relative;
-    left: 33%; }
+    left: 80%; }
   header .upper a {
     float: left;
     color: #000;
     border: 1px solid #999;
     padding: 5px 10px;
     font-size: 19px;
-    margin-left: 30px;
     text-decoration: none;
     cursor: pointer;
     text-align: center;
@@ -117,7 +116,7 @@ header .lower {
     cursor: pointer;
     margin: 5px;
     -webkit-user-select: none;
-    padding: 5px 15px;
+    padding: 5px;
     font-size: 20px;
     font-weight: 500; }
 header .menuBtn {
@@ -348,9 +347,6 @@ footer {
     margin-top: 97px; }
     header .upper a {
       margin-left: 10px; }
-    header .upper input {
-      top: -50px;
-      left: 50%; }
   header .lower {
     display: none; }
   header .menuBtn {
