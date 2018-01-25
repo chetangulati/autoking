@@ -13,37 +13,63 @@
 
     <!-- Plugins -->
      <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+     <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+    <script src="js/jquery.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
   </head>
   <body>
     <header>
-      <a href="/"><img src="images/logo.png" id="logo" alt="Auto King"></a>
-      <div id="logoCt"></div>
-      <div id="a" class="shdw3"></div>
-      <div id="b" class="shdw3"></div>
-      <div id="menu" class="shdw3">
-        <div class="upper">
-          <input type="text" class="shdw2" name="q" placeholder="Search nearest center">
-          <div class="loginCart">
-            <a href="/login" >Login & Signup</a>
+      <div class="pcHead">
+        <a href="/"><img src="images/logo.png" id="logo" alt="Auto King"></a>
+        <div id="logoCt"></div>
+        <div id="a" class="shdw3"></div>
+        <div id="b" class="shdw3"></div>
+        <div id="menu" class="shdw3">
+          <div class="upper">
+            <input type="text" class="shdw2" name="q" placeholder="Search nearest center">
+            <div class="loginCart">
+              <a href="/login" >Login & Signup</a>
+            </div>
+          </div>
+          <div class="lower">
+            <ul>
+              <li>Home</li>
+              <li>Book a Service</li>
+              <li>Roadside Assistance</li>
+              <li>Why Autoking</li>
+              <li>Career</li>
+              <li>About Us</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div class="menuBtn">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
           </div>
         </div>
-        <div class="lower">
-          <ul>
-            <li>Home</li>
-            <li>Book a Service</li>
-            <li>Roadside Assistance</li>
-            <li>Why Autoking</li>
-            <li>Career</li>
-            <li>About Us</li>
-            <li>Contact Us</li>
-          </ul>
-        </div>
+      </div>
+      <!-- PC head ends here -->
+
+      <div class="mobHead">
         <div class="menuBtn">
           <div class="line"></div>
           <div class="line"></div>
           <div class="line"></div>
         </div>
+        <div class="logo">
+          <a href="/"><img src="images/logo.png" alt="Auto King"></a>
+        </div>
+        <div class="vline"></div>
+        <div class="search">
+          <i class="fa fa-search fa-lg"></i>
+        </div>
+        <div class="vline"></div>
+        <a href="#" class="lgn">Login & Signup</a>
       </div>
+
+      <!-- Mob head ends here  -->
     </header>
 
     <section id="banner">
@@ -51,6 +77,9 @@
         <h1 class="tagLine">
           An Eye Catching Tagline
         </h1>
+        <div class="btnhlder">          
+          <button type="button" name="Book Now">Book a Service</button>
+        </div>
         <div class="formHolder">
           <form action="index.html" method="post">
             <input type="text" name="servNeeded" placeholder="Service Needed">

@@ -50,7 +50,7 @@ body{
   -webkit-transform: rotate(4deg);
   -ms-transform: rotate(4deg);
   transform: rotate(4deg);
-  top: -115px;
+  top: -120px;
 }
 header{
   #menu{
@@ -98,7 +98,7 @@ header{
     width: 100%;
     height: 37px;
     ul{
-      margin-left: 28%;
+      margin-left: 23%;
       list-style-type: none;
     }
     li{
@@ -116,7 +116,57 @@ header{
     display: none;
   }
 }
-
+.mobHead{
+  display: none;
+  width: 100%;
+  height: 50px;
+  background: $blue;
+  .menuBtn{
+    display: block;
+    float: left;
+    position: relative;
+    top: 0px;
+    padding: 14px 0;
+    right: 0px;
+    .line{
+      width: 20px;
+      height: 3px;
+      margin: 3px 8px;
+      background: #fff;
+    }
+  }
+  .logo{
+    width: 85px;
+    float: left;
+    background: $yellow;
+    img{
+      width: 80%;
+      margin: 5px 10%;
+    }
+  }
+  .search{
+    float: left;
+    .fa-search{
+      color: #fff;
+      padding: 14px 9px;
+    }
+  }
+  .vline{
+    width: 1px;
+    height: 100%;
+    background: #b6c0fb;
+    float: left;
+  }
+  .lgn{
+    float: right;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    margin: 10px 10px 0 0;
+  }
+}
 
 #banner{
   width: 100%;
@@ -130,8 +180,8 @@ header{
   }
   .formHolder{
     width: 100%;
-    position: relative;
-    top: 168px;
+    position: absolute;
+    top: 530px;
     height: 170px;
     bottom: 0;
     background: rgba(0, 0, 0, 0.7);
@@ -146,12 +196,12 @@ header{
   }
   form{
     margin: auto;
-    width: 1020px;
+    width: 80%;
   }
   input{
-    width: 300px;
+    width: (86%/3);
     float: left;
-    margin: 20px;
+    margin: 2%;
     border: 0;
     background: #fff;
     padding: 5px 10px;
@@ -163,6 +213,9 @@ header{
     color: #000;
     font-weight: 600;
   }
+}
+.btnhlder{
+  display: none;
 }
 
 #topCars{
@@ -201,7 +254,7 @@ header{
     height: 200px;
   }
   .vline{
-    width: 20px;
+    width: 2%;
     margin: 0 9%;
     height: 200px;
     float: left;
@@ -218,7 +271,7 @@ header{
     margin: auto;
   }
   .vline{
-    width: 20px;
+    width: 2%;
     margin: 0 9%;
     float: left;
     height: 300px;
@@ -393,7 +446,10 @@ footer{
     .upper{
       margin-top: 97px;
       a{
-        margin-left: 10px;
+        margin-left: -60px;
+      }
+      input{
+        width: 30%;
       }
     }
     .lower{
@@ -413,6 +469,92 @@ footer{
         margin: 3px 8px;
         background: #000;
       }
+    }
+  }
+  #topCars .cardHolder, #topCars .vlineHolder{
+    width: 90%;
+  }
+  #features .vlineHolder{
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pcHead{
+    display: none;
+  }
+  header .menuBtn{
+    display: block;
+  }
+  .mobHead{
+    display: block;
+    position: fixed;
+    width: 100%;
+  }
+  #banner .tagLine{
+    padding-top: 80px;
+    font-size: 50px;
+  }
+  .formHolder{
+    display: none;
+  }
+  .btnhlder{
+    width: 240px;
+    display: block;
+    margin: 80px auto auto auto;
+  }
+  button{
+    border: 0;
+    background: $yellow;
+    padding: 5px 10px;
+    color: #000;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  #topCars{
+    height: 1500px;
+    .card{
+      width: 100%;
+      margin: 20px 0;
+      height: 230px;
+    }
+    .vlineHolder{
+      display: none;
+    }
+  }
+  #features{
+    .vlineHolder{
+      display: none;
+    }
+    .car img{
+      display: none;
+    }
+  }
+  #cities {
+    height: 1450px;
+    .card{
+      width: 92%;
+    }
+  }
+  #why{
+    .left, .right{
+      float: right;
+      width: 100%;
+    }
+  }
+  footer{
+    height: 1020px;
+    .social, .links, .contact{
+      width: 100%;
+    }
+    .upperfooter{
+      height: 950px;
+    }
+    .lowerfooter{
+      height: 100px;
     }
   }
 }
