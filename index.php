@@ -1,14 +1,16 @@
 <?php
-  if (isset($_SESSION['loged'])) {
-    if ($_SESSION['loged'] == 1) {
-      header('Location: home.php');
-    }
-  }
-  elseif (isset($_POST['uname']) && isset($_POST['passwd'])) {
-    if ($_POST['uname'] == "intruder" && $_POST['passwd'] == "studds") {
-      $_SESSION['loged'] = 1
-    }
-  }
+  // if (isset($_SESSION['loged'])) {
+  //   if ($_SESSION['loged'] == 1) {
+  //     header('Location: home.php');
+  //   }
+  // }
+  // elseif (isset($_POST['uname']) && isset($_POST['passwd'])) {
+  //   if ($_POST['uname'] == "intruder" && $_POST['passwd'] == "studds") {
+  //     $_SESSION['loged'] = 1
+  //   }
+  // }
+
+  echo "Hello World";
  ?>
 
  <!DOCTYPE html>
