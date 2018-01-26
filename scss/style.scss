@@ -8,6 +8,26 @@
 body{
   width: 100%;
   overflow-x: hidden;
+  height: 100%;
+}
+#filterSideNav{
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 190;
+  transition: ease opacity 200ms;
+  -webkit-transition: ease opacity 200ms;
+  -moz-transition: ease opacity 200ms;
+  &.open{
+    visibility: visible;
+    opacity: 1;
+    transition: ease opacity 200ms;
+    -webkit-transition: ease opacity 200ms;
+    -moz-transition: ease opacity 200ms;
+  }
 }
 #logoCt{
   width: 50%;
@@ -168,6 +188,79 @@ header{
   }
 }
 
+#sideNav{
+  width: 80%;
+  position: fixed;
+  top: 0;
+  display: none;
+  left: -80%;
+  height: 100%;
+  background: #fff;
+  z-index: 200;
+  transition: ease-in all 200ms;
+  -webkit-transition: ease-in all 200ms;
+  -moz-transition: ease-in all 200ms;
+  .userArea{
+    width: 100%;
+    background: lighten($blue, 10%);
+    height: 25%;
+    .userImg{
+      width: 25%;
+      margin: 0 (75%/2);
+       img{
+        border-radius: 100%;
+        width: 100%;
+        margin-top: 20%;
+      }
+    }
+    .email{
+      width: 100%;
+      color: #fff;
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+  .container{
+    width: 100%;
+    height: 75%;
+    overflow-y: auto;
+    ul{
+      list-style-type: none;
+    }
+    li{
+      width: 100%;
+      float: left;
+      color: #888;
+      height: 40px;
+      box-sizing: border-box;
+    }
+    li:hover{
+      background: #cfcfcf;
+    }
+    a{
+      text-decoration: none;
+      box-sizing: border-box;
+      padding: 10px;
+      color: #000;
+      width: 80%;
+      float: left;
+    }
+    .icon{
+      width: 20%;
+      float: left;
+      height: 100%;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+  }
+  &.open{
+    -webkit-transition: ease-in all 200ms;
+    -moz-transition: ease-in all 200ms;
+    transition: ease-in all 200ms;
+    left: 0;
+  }
+}
+
 #banner{
   width: 100%;
   height: 550px;
@@ -214,6 +307,73 @@ header{
     font-weight: 600;
   }
 }
+
+.bookingModal{
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: ease all 200ms;
+  -webkit-transition: ease all 200ms;
+  -moz-transition: ease all 200ms;
+  &.active{
+    visibility: visible;
+    opacity: 1;
+    transition: ease all 200ms;
+    -webkit-transition: ease all 200ms;
+    -moz-transition: ease all 200ms;
+  }
+}
+.modal-dialog{
+  width: 90%;
+  height: 95%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 0 #333;
+  margin: 10px auto;
+  animation-name: animatetop;
+  animation-duration: 100ms;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 100ms;
+}
+.modal-head{
+  width: 100%;
+  height: 50px;
+  background: $blue;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  h3{
+    font-weight: 400;
+    padding: 10px;
+    font-size: 20px;
+    float: left;
+  }
+  #close{
+    float: right;
+    font-weight: 400;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 100ms;
+    -webkit-user-select: none;
+  }
+  #close:hover{
+    transform: scale(1.23);
+    -webkit-transform: scale(1.23);
+  }
+}
+
 .btnhlder{
   display: none;
 }
@@ -458,6 +618,7 @@ footer{
     .menuBtn{
       display: block;
       float: right;
+      cursor: pointer;
       position: relative;
       top: -40px;
       padding: 6px 0;
@@ -491,9 +652,21 @@ footer{
     position: fixed;
     width: 100%;
   }
-  #banner .tagLine{
-    padding-top: 80px;
-    font-size: 50px;
+  #banner {
+    .tagLine{
+      padding-top: 80px;
+      font-size: 50px;
+    }
+    form{
+      margin: 20px 10%;
+      float: left;
+    }
+    input{
+      width: 90%;
+      border: 1px solid #aaa;
+      border-radius: 10px;
+      margin: 10px 5%;
+    }
   }
   .formHolder{
     display: none;
@@ -508,6 +681,7 @@ footer{
     background: $yellow;
     padding: 5px 10px;
     color: #000;
+    cursor: pointer;
     font-size: 25px;
     font-weight: 600;
     border-radius: 10px;
@@ -544,6 +718,9 @@ footer{
       float: right;
       width: 100%;
     }
+  }
+  #sideNav{
+    display: block;
   }
   footer{
     height: 1020px;

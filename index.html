@@ -72,13 +72,37 @@
       <!-- Mob head ends here  -->
     </header>
 
+    <div id="filterSideNav"></div>
+    <section id="sideNav">
+
+      <div class="userArea">
+        <div class="userImg">
+          <img src="images/default.png" alt="User">
+        </div>
+        <div class="email">
+          default@autoking.in
+        </div>
+      </div>
+      <div class="container">
+        <ul>
+          <li><i class="fa fa-car fa-lg icon"></i><a href="#">Sample Link</a></li>
+          <li><i class="fa fa-car fa-lg icon"></i><a href="#">Sample Link</a></li>
+          <li><i class="fa fa-car fa-lg icon"></i><a href="#">Sample Link</a></li>
+          <li><i class="fa fa-car fa-lg icon"></i><a href="#">Sample Link</a></li>
+          <li><i class="fa fa-car fa-lg icon"></i><a href="#">Sample Link</a></li>
+          <li><i class="fa fa-car fa-lg icon"></i><a href="#">Sample Link</a></li>
+        </ul>
+      </div>
+    </section>
+    <!-- Side nav ends here  -->
+
     <section id="banner">
       <div class="filter">
         <h1 class="tagLine">
           An Eye Catching Tagline
         </h1>
         <div class="btnhlder">
-          <button type="button" name="Book Now">Book a Service</button>
+          <button type="button" id="modalBtn" name="Book Now">Book a Service</button>
         </div>
         <div class="formHolder">
           <form action="index.html" method="post">
@@ -91,6 +115,26 @@
           </form>
         </div>
       </div>
+
+      <div class="bookingModal">
+              <div class="modal-dialog">
+                <div class="modal-head">
+                  <h3>Book a service</h3>
+                  <span id="close">x</span>
+                </div>
+                <div class="modal-body">
+                  <form class="modalForm">
+                    <input type="text" class="mobinp" name="servNeeded" placeholder="Service Needed">
+                    <input type="text" class="mobinp" name="carMake" placeholder="Car Make">
+                    <input type="text" class="mobinp" name="carModel" placeholder="Car Model">
+                    <input type="text" class="mobinp" name="fuel" placeholder="Fuel">
+                    <input type="text" class="mobinp" name="dateNtime" placeholder="Schedule">
+                    <input type="submit" class="mobinp" name="submit" value="Book Now">
+                  </form>
+                </div>
+              </div>
+            </div>
+
     </section>
     <!-- Banner ends here -->
 
