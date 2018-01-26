@@ -1,3 +1,11 @@
+<?php
+  if (isset($_SESSION['loged'])) {
+    if($_SESSION['loged'] != 1){
+      header('Location: index.php');
+    }
+  }
+ ?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -77,7 +85,7 @@
         <h1 class="tagLine">
           An Eye Catching Tagline
         </h1>
-        <div class="btnhlder">          
+        <div class="btnhlder">
           <button type="button" name="Book Now">Book a Service</button>
         </div>
         <div class="formHolder">
