@@ -6,7 +6,7 @@
   }
   elseif (isset($_POST['uname']) && isset($_POST['passwd'])) {
     if ($_POST['uname'] == "intruder" && $_POST['passwd'] == "studds") {
-      $_SESSION['loged'] = 1
+      $_SESSION['loged'] = 1;
     }
   }
 
