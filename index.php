@@ -8,6 +8,9 @@
     if ($_POST['uname'] == "intruder" && $_POST['passwd'] == "studds") {
       $_SESSION['loged'] = 1;
     }
+    else {
+      echo "Incroorect username or password";
+    }
   }
 
  ?>
@@ -21,7 +24,7 @@
    <body>
      <form class="" action="index.php" method="post">
        <input type="text" name="uname" placeholder="username">
-       <input type="password" name="passwd" placeholder="username">
+       <input type="password" name="passwd" placeholder="password">
        <input type="submit" value="Authenticate">
      </form>
    </body>
