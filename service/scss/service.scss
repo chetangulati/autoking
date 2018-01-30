@@ -1,0 +1,246 @@
+@import "var.scss";
+
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Exo 2', sans-serif;
+}
+#sideNav{
+  width: 20%;
+  position: fixed;
+  height: 100vh;
+  background: $blue;
+  h1{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 30px 0px;
+  }
+  .user{
+    width: 100px;
+    margin: auto;
+  }
+  img{
+    width: 100%;
+    border-radius: 100%;
+    padding: 7px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .userName{
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  ul{
+    width: 100%;
+    color: #b4c2ff;
+  }
+  li{
+    width: 100%;
+    padding: 5px 0px 5px 12%;
+    box-sizing: border-box;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    &.active{
+      // background: darken($blue, 5%);
+      color: #fff;
+      transition: 200ms all;
+    }
+  }
+  i{
+    padding: 10px;
+  }
+  #vslide{
+    width: 4px;
+    border-radius: 4px;
+    height: 46px;
+    position: relative;
+    float: left;
+    background: #fff;
+    transition: 200ms all;
+  }
+}
+
+#content{
+  position: absolute;
+  top: 0;
+  left: 20%;
+  width: 80%;
+  .srch{
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #eee;
+    .txt{
+      float: right;
+    }
+    .vacationMode{
+      width: 60px;
+      height: 30px;
+      background: #ccc;
+      float: right;
+      border-radius: 20px;
+      -webkit-user-select: none;
+      margin: 20px;
+      cursor: pointer;
+      transition: 200ms all;
+      &.active{
+        background: darken($blue, 10%);
+        transition: 200ms all;
+      }
+    }
+    .slide{
+      width: 26px;
+      height: 26px;
+      margin: 2px;
+      cursor: pointer;
+      left: 0px;
+      position: relative;
+      background: #fff;
+      border-radius: 100%;
+      transition: 100ms all;
+      -webkit-user-select: none;
+      &.active{
+        left: 30px;
+        transition: 100ms all;
+      }
+    }
+    .txt{
+      margin-top: 25px;
+    }
+  }
+  i{
+    float: left;
+    color: #bbb;
+    position: relative;
+    top: 37px;
+    left: 20px;
+    z-index: 2;
+  }
+  input{
+    border: 0;
+    box-sizing: border-box;
+    width: 50%;
+    z-index: 1;
+    color: #333;
+    padding: 5px 30px;
+    font-size: 18px;
+    position: relative;
+    top: 30px;
+  }
+  .tab{
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+}
+#dash{
+  width: 100%;
+  .card{
+    width: (88%/3);
+    height: 100px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    float: left;
+    margin: 2%;
+    overflow: hidden;
+    color: #333;
+    .cardHead{
+      width: 100%;
+      text-align: center;
+      padding: 5px 0;
+      margin: 0;
+      font-size: 18px;
+      border-bottom: 2px solid #ccc;
+    }
+    p{
+      width: 100%;
+      text-align: center;
+      font-size: 30px;
+      padding-top: 10px;
+      float: left;
+    }
+
+  }
+  h2{
+    margin: 2%;
+    float: left;
+    color: #333;
+  }
+  .boost, .prices, .tips{
+    width: 100%;
+    float: left;
+  }
+}
+#analytics{
+  .chartHolder{
+    width: 94%;
+    margin: 3%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .chartFilter{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #ddd;
+    input{
+      width: 150px;
+      height: 30px;
+      border: 1px solid #888;
+      border-radius: 5px;
+      top: 0;
+    }
+    .last{
+      float: right;
+      button{
+        width: 120px;
+        border: 0;
+        border-radius: 5px;
+        padding: 5px;
+        cursor: pointer;
+        color: #fff;
+        font-size: 18px;
+        background: $blue;
+      }
+    }
+  }
+}
+#reviews{
+  h2{
+    margin: 40px 0 20px 40px;
+    float: left;
+    span{
+      color: green;
+    }
+  }
+  .rev{
+    width: 100%;
+    float: left;
+  }
+  .revCardHolder{
+    width: 100%;
+    float: left;
+    .revCard{
+      width: 90%;
+      margin: 2% 5%;
+      min-height: 100px;
+      p{
+        padding: 2%;
+      }
+      .dnt{
+        padding: 20px;
+        color: #aaa;
+      }
+    }
+  }
+}

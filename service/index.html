@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Service Provider Portal | Auto King</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/service.css">
+  </head>
+  <body>
+    <section id="sideNav">
+      <h1>Service Provider</h1>
+      <div class="user">
+        <img src="images/default.png" alt="User">
+      </div>
+      <div class="userName">
+        Default User
+      </div>
+      <div id="vslide"></div>
+      <ul>
+        <li class="active" data-tab="#book"><i class="fa fa-fw fa-lg fa-car"></i>Bookings</li>
+        <li data-tab="#dash"><i class="fa fa-fw fa-lg fa-dashboard"></i>Dashboard</li>
+        <li data-tab="#analytics"><i class="fa fa-fw fa-lg fa-area-chart"></i>Analytics</li>
+        <li data-tab="#acounts"><i class="fa fa-fw fa-lg fa-inr"></i>Accounts</li>
+        <li data-tab="#reviews"><i class="fa fa-fw fa-lg fa-star"></i>Reviews</li>
+      </ul>
+    </section>
+
+    <section id="content">
+      <div class="srch">
+        <i class="fa fa-lg fa-search"></i><input placeholder="Search for booking number" type="text" name="q" id="q">
+
+        <div class="vacationMode">
+          <div class="slide"></div>
+        </div>
+
+        <div class="txt">
+          Vacation Mode
+        </div>
+
+      </div>
+
+      <div id="book" class="tab active">
+
+      </div>
+      <!-- Booking Ends here -->
+
+      <div id="dash" class="tab">
+        <div class="card shdw3">
+          <h2 class="cardHead">Sale this week</h2>
+          <p>&#8377; 4500.00</p>
+        </div>
+        <div class="card shdw3">
+          <h2 class="cardHead">Outstanding Balance</h2>
+          <p>&#8377; 2000.00</p>
+        </div>
+        <div class="card shdw3">
+          <h2 class="cardHead">Vehicles this week</h2>
+          <p>20</p>
+        </div>
+
+        <div class="prices">
+          <h2>Current Prices</h2>
+          <form method="post">
+            <input type="text" name="service"  value="">
+          </form>
+        </div>
+
+        <div class="tips">
+          <h2>Tips to improve</h2>
+
+        </div>
+      </div>
+      <!-- Dashboard ends here -->
+
+      <div id="analytics" class="tab">
+        <div class="chartFilter">
+          <input type="text" name="from" placeholder="From">
+          <input type="text" name="to" placeholder="To">
+          <div class="last">
+            <button type="button" name="week">This Week</button>
+            <button type="button" name="month">This Month</button>
+          </div>
+        </div>
+        <div class="chartHolder">
+          <canvas id="myAreaChart" width="100%" height="30"></canvas>
+        </div>
+        <div class="boost">
+          <h2>Boost my Sale</h2>
+          <div class="pkg">
+
+          </div>
+          <div class="pkg">
+
+          </div>
+        </div>
+      </div>
+      <!-- Analytics Ends here -->
+
+      <div id="accounts" class="tab">
+
+      </div>
+      <!-- Accounts ends here -->
+
+      <div id="reviews" class="tab">
+        <h2>Current Average Rating - <span>4.65</span></h2>
+
+        <div class="rev">
+          <h2>Customer Reviews</h2>
+          <div class="revCardHolder">
+            <div class="revCard shdw2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac tortor quis velit porttitor molestie ut gravida sem. Sed quis ipsum eget ligula vulputate eleifend. Aliquam sit amet sodales velit, vel porta quam. Vivamus interdum lectus sodales massa tempus, a feugiat felis fringilla. Pellentesque accumsan eget lacus eu sagittis. Nunc mi dolor, lacinia tempor dolor quis, malesuada convallis quam. Proin auctor sapien vel est iaculis lacinia. Quisque feugiat leo et sodales</p>
+              <div class="dnt">
+                11:25AM 25/01/2018
+              </div>
+            </div>
+            <div class="revCard shdw2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac tortor quis velit porttitor molestie ut gravida sem. Sed quis ipsum eget ligula vulputate eleifend. Aliquam sit amet sodales velit, vel porta quam. Vivamus interdum lectus sodales massa tempus, a feugiat felis fringilla. Pellentesque accumsan eget lacus eu sagittis. Nunc mi dolor, lacinia tempor dolor quis, malesuada convallis quam.</p>
+              <div class="dnt">
+                11:25AM 25/01/2018
+              </div>
+            </div>
+            <div class="revCard shdw2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac tortor quis velit porttitor molestie ut gravida sem. Sed quis ipsum eget ligula vulputate eleifend. Aliquam sit amet sodales velit, vel porta quam. Vivamus interdum lectus sodales massa tempus, a feugiat felis fringilla. Pellentesque accumsan eget lacus eu sagittis. Nunc mi dolor, lacinia te</p>
+              <div class="dnt">
+                11:25AM 25/01/2018
+              </div>
+            </div>
+            <div class="revCard shdw2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac tortor quis velit porttitor molestie ut gravida sem. Sed quis ipsum eget ligula vulputate eleifend. Aliquam sit amet sodales velit, vel porta quam. Vivamus interdum lectus sodales massa tempus, a feugiat felis fringilla. Pellentesque accumsan eget lacus eu sagittis. Nunc mi dolor, lacinia</p>
+              <div class="dnt">
+                11:25AM 25/01/2018
+              </div>
+            </div>
+            <div class="revCard shdw2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac tortor quis velit porttitor molestie ut gravida sem. Sed quis ipsum eget ligula vulputate eleifend. Aliquam sit amet sodales velit, vel porta quam. Vivamus interdum lectus sodales massa tempus, a feugiat felis fringilla. Pellentesque accumsan eget lacus eu sagittis. Nunc mi dolor, lacinia tempor dolor quis, malesuada convallis quam. Proin auctor sapien vel est iaculis laceu. </p>
+              <div class="dnt">
+                11:25AM 25/01/2018
+              </div>
+            </div>
+            <div class="revCard shdw2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac tortor quis velit porttitor molestie ut gravida sem. Sed quis ipsum eget ligula vulputate eleifend. Aliquam sit amet sodales velit, vel porta quam. Vivamus interdum lectus sodales massa tempus, a feugiat felis fringilla. Pellentesque accumsan eget lacus eu sagittis. Nunc mi dolor, lacinia tempor dolor quis, malesuada convallis quam. Proin auctor sapien vel est iaculis lacinia. Quisque feugiat leo et sodales dictum. Donec dignissim semper leo eu commodo. Fusce vitae tincidunt sem. Nam tempus porta turpis, in eleifend felis elementum ut. Integer elementum posuere felis a viverra. Curabitur vulputate, eros nec fringilla gravida, erat nulla blandit purus, id placerat mi nulla vitae leo. Morbi congue sollicitudin magna, eu tincidunt neque semper a. Aliquam tempor lacinia ipsum, a feugiat velit imperdiet eu. </p>
+              <div class="dnt">
+                11:25AM 25/01/2018
+              </div>
+            </div>
+
+            <div class="revCard shdw2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac tortor quis velit porttitor molestie ut gravida sem. Sed quis ipsum eget ligula vulputate eleifend. Aliquam sit amet sodales velit, vel porta quam. Vivamus interdum lectus sodales massa tempus, a feugiat felis fringilla. Pellentesque accumsan eget lacus eu sagittis. Nunc mi dolor, lacinia tempor dolor quis, malesuada convallis quam. Proin auctor sapien vel est iaculis lacinia. Quisque feugiat leo et sodales dictum. Donec dignissim semper leo eu commodo. Fusce vitae tincidunt sem. Nam tempus porta turpis, in eleifend felis elementum ut. Integer elementum posuere felis a viverra. Curabitur vulputate, eros nec fringilla gravida, erat nulla blandit purus, id placerat mi nulla vitae leo. Morbi congue sollicitudin magna, eu tincidunt neque semper a. Aliquam tempor lacinia ipsum, a feugiat velit imperdiet eu. </p>
+              <div class="dnt">
+                11:25AM 25/01/2018
+              </div>
+            </div>
+            <div class="revCard shdw2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac tortor quis velit porttitor molestie ut gravida sem. Sed quis ipsum eget ligula vulputate eleifend. Aliquam sit amet sodales velit, vel porta quam. Vivamus interdum lectus sodales massa tempus, a feugiat felis fringilla. Pellentesque accumsan eget lacus eu sagittis. Nunc mi dolor, lacinia tempor dolor quis, malesuada convallis quam. Proin auctor sapien vel est iaculis lacinia. Quisque feugiat leo et sodales dictum. Donec dignissim semper leo eu commodo. Fusce vitae tincidunt sem. Nam tempus porta turpis, in eleifend felis elementum ut. Integer elementum posuere felis a viverra. Curabitur vulputate, eros nec fringilla gravida, erat nulla blandit purus, id placerat mi nulla vitae leo. Morbi congue sollicitudin magna, eu tincidunt neque semper a. Aliquam tempor lacinia ipsum, a feugiat velit imperdiet eu. </p>
+              <div class="dnt">
+                11:25AM 25/01/2018
+              </div>
+            </div>
+            <div class="revCard shdw2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac tortor quis velit porttitor molestie ut gravida sem. Sed quis ipsum eget ligula vulputate eleifend. Aliquam sit amet sodales velit, vel porta quam. Vivamus interdum lectus sodales massa tempus, a feugiat felis fringilla. Pellentesque accumsan eget lacus eu sagittis. Nunc mi dolor, lacinia tempor dolor quis, malesuada convallis quam. Proin auctor sapien vel est iaculis lacinia. Quisque feugiat leo et sodales dictum. Donec dignissim semper leo eu commodo. Fusce vitae tincidunt sem. Nam tempus porta turpis, in eleifend felis elementum ut. Integer elementum posuere felis a viverra. Curabitur vulputate, eros nec fringilla gravida, erat nulla blandit purus, id placerat mi nulla vitae leo. Morbi congue sollicitudin magna, eu tincidunt neque semper a. Aliquam tempor lacinia ipsum, a feugiat velit imperdiet eu. </p>
+              <div class="dnt">
+                11:25AM 25/01/2018
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Reviews ends here -->
+
+    </section>
+
+    <script type="text/javascript">
+    [
+      '../js/jquery.js',
+      '../admin/vendor/chart.js/Chart.min.js',
+      'js/service.js',
+      'https://use.fontawesome.com/1fd731ec68.js',
+    ].forEach(function(src) {
+      var script = document.createElement('script');
+      script.src = src;
+      script.async = false;
+      document.head.appendChild(script);
+    });
+    </script>
+  </body>
+</html>
+
+
+<!-- Traversy Media MongoDb -->
