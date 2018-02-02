@@ -650,16 +650,23 @@ footer {
   #topCars {
     height: 1500px; }
     #topCars .card {
-      width: 100%;
-      margin: 20px 0;
+      width: 80%;
+      margin: 20px 10%;
       height: 230px; }
     #topCars .vlineHolder {
       display: none; }
 
+  #features {
+    height: 1250px; }
+    #features .card {
+      width: 100%;
+      margin: 2%; }
+
   #cities {
     height: 1450px; }
     #cities .card {
-      width: 92%; }
+      width: 80%;
+      margin: 10%; }
 
   #why .left, #why .right {
     float: right;

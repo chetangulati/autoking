@@ -749,8 +749,8 @@ footer{
   #topCars{
     height: 1500px;
     .card{
-      width: 100%;
-      margin: 20px 0;
+      width: 80%;
+      margin: 20px 10%;
       height: 230px;
     }
     .vlineHolder{
@@ -758,12 +758,17 @@ footer{
     }
   }
   #features{
-
+    height: 1250px;
+    .card{
+      width: 100%;
+      margin: 2%;
+    }
   }
   #cities {
     height: 1450px;
     .card{
-      width: 92%;
+      width: 80%;
+      margin: 10%;
     }
   }
   #why{
