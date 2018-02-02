@@ -347,7 +347,26 @@ header .menuBtn {
     -webkit-transform: scale(1.23); }
 
 .btnhlder {
-  display: none; }
+  width: 600px;
+  display: block;
+  margin: 150px auto auto auto; }
+  .btnhlder button {
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 45%;
+    float: left;
+    margin: 2.5%;
+    text-align: center; }
+  .btnhlder #modalBtntwo {
+    background: #FFC600;
+    color: #000; }
+  .btnhlder #modalBtnfour {
+    color: #fff;
+    background: #006677; }
 
 #topCars {
   width: 100%;
@@ -385,28 +404,43 @@ header .menuBtn {
     background: #333; }
 
 #features {
-  background: #006680;
+  background: #003d4d;
   width: 100%;
-  height: 650px; }
-  #features .vlineHolder {
-    height: 300px;
+  height: 480px; }
+  #features h2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+    color: #fff; }
+  #features .hline {
+    width: 100px;
+    height: 5px;
+    background: #FFC600;
+    margin: 5px auto 20px auto; }
+  #features .cardHolder {
     width: 80%;
-    margin: auto; }
-  #features .vline {
-    width: 2%;
-    margin: 0 9%;
+    margin: 50px 10%;
+    height: 250px; }
+  #features .card {
+    width: 21%;
+    margin: 0 2%;
     float: left;
-    height: 300px;
-    background: #fff; }
-  #features .car img {
-    width: 80%;
-    position: relative;
-    margin: 0 10%;
-    top: -120px; }
+    height: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 20px;
+    border-bottom: 5px solid #FFC600; }
+  #features h3 {
+    text-align: center;
+    color: #0091AA; }
+  #features p {
+    text-align: center;
+    padding: 20px; }
 
 #cities {
   width: 100%;
-  height: 700px; }
+  height: 550px; }
   #cities h2 {
     width: 100%;
     text-align: center;
@@ -419,11 +453,11 @@ header .menuBtn {
     background: #FFC600;
     margin: 5px auto 20px auto; }
   #cities .card {
-    width: 25.33333%;
-    margin: 4%;
+    width: 19%;
+    margin: 3%;
     border-radius: 10px;
     float: left;
-    height: 400px; }
+    height: 300px; }
     #cities .card img {
       width: 90%;
       padding: 5%; }
@@ -433,7 +467,7 @@ header .menuBtn {
 
 #why {
   width: 100%;
-  height: 500px; }
+  height: 435px; }
   #why h2 {
     width: 100%;
     text-align: center;
@@ -470,17 +504,35 @@ footer {
     box-sizing: border-box;
     padding: 20px;
     color: #fff; }
-  footer .social, footer .links, footer .contact {
-    width: 33.33333%;
+  footer .social, footer .links, footer .contact, footer .newsletter {
+    width: 25%;
     height: 330px;
     box-sizing: border-box;
     padding: 30px;
     float: left; }
-    footer .social h3, footer .links h3, footer .contact h3 {
+    footer .social h3, footer .links h3, footer .contact h3, footer .newsletter h3 {
       width: 100%;
       text-align: center;
       color: #fff;
       font-size: 25px; }
+  footer .newsletter p {
+    color: #fff;
+    padding-top: 10px;
+    float: left; }
+  footer .newsletter input {
+    width: 100%;
+    border: 0;
+    padding: 5px 10px;
+    margin: 0;
+    box-sizing: border-box;
+    float: left;
+    font-size: 18px; }
+  footer .newsletter input[type=submit] {
+    background: #0091AA;
+    color: #fff;
+    cursor: pointer; }
+  footer .newsletter form {
+    margin-top: 20px; }
   footer .social li {
     display: inline-block;
     padding: 5px; }
@@ -497,7 +549,9 @@ footer {
   footer .links li {
     list-style-type: none;
     padding: 5px;
-    display: inline-block; }
+    display: inline-block;
+    float: left;
+    width: 100%; }
   footer .links a {
     color: #fff;
     text-decoration: none; }
@@ -586,21 +640,12 @@ footer {
     display: none; }
 
   .btnhlder {
-    width: 240px;
+    width: 90%;
     display: block;
-    margin: 80px auto auto auto; }
-
-  button {
-    border: 0;
-    background: #FFC600;
-    padding: 5px 10px;
-    color: #000;
-    cursor: pointer;
-    font-size: 25px;
-    font-weight: 600;
-    border-radius: 10px;
-    width: 100%;
-    text-align: center; }
+    margin: 50px 5% 0 5%; }
+    .btnhlder button {
+      width: 90%;
+      margin: 5%; }
 
   #topCars {
     height: 1500px; }
@@ -610,11 +655,6 @@ footer {
       height: 230px; }
     #topCars .vlineHolder {
       display: none; }
-
-  #features .vlineHolder {
-    display: none; }
-  #features .car img {
-    display: none; }
 
   #cities {
     height: 1450px; }
@@ -630,10 +670,12 @@ footer {
 
   footer {
     height: 1020px; }
-    footer .social, footer .links, footer .contact {
+    footer .social, footer .links, footer .contact, footer .newsletter {
       width: 100%; }
+    footer .newsletter {
+      height: 150px; }
     footer .upperfooter {
-      height: 950px; }
+      height: 1080px; }
     footer .lowerfooter {
       height: 100px; } }
 

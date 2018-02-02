@@ -5,6 +5,8 @@
   @media (min-width: 992px) {
     .navbar-sidenav {
       height: calc(100vh - 112px);
+      overflow-x: hidden;
+      overflow-y: auto;
     }
     .sidenav-toggler {
       position: absolute;

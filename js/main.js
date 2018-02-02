@@ -10,9 +10,12 @@ $('.menuBtn').click(function () {
 $('#filterSideNav').click(function (e) {
   sideNav();
 });
-$('#modalBtn').click(function () {
+$('#modalBtntwo').click(function () {
   $(".bookingModal").addClass('active');
 });
 $("#close").click(function () {
-  $(".bookingModal").removeClass('active');  
+  $(".bookingModal").removeClass('active');
 })
+$('#modalBtnfour').click(function () {
+  $(".bookingModal").addClass('active');
+});

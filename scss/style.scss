@@ -375,7 +375,29 @@ header{
 }
 
 .btnhlder{
-  display: none;
+  width: 600px;
+  display: block;
+  margin: 150px auto auto auto;
+  button{
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 45%;
+    float: left;
+    margin: 2.5%;
+    text-align: center;
+  }
+  #modalBtntwo{
+    background: $yellow;
+    color: #000;
+  }
+  #modalBtnfour{
+    color: #fff;
+    background: darken($blue, 10%);
+  }
 }
 
 #topCars{
@@ -422,32 +444,50 @@ header{
   }
 }
 #features{
-  background: #006680;
+  background: darken(#006680, 10%);
   width: 100%;
-  height: 650px;
-  .vlineHolder{
-    height: 300px;
-    width: 80%;
-    margin: auto;
+  height: 480px;
+  h2{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+    color: #fff;
   }
-  .vline{
-    width: 2%;
-    margin: 0 9%;
+  .hline{
+    width: 100px;
+    height: 5px;
+    background: $yellow;
+    margin: 5px auto 20px auto;
+  }
+  .cardHolder{
+    width: 80%;
+    margin: 50px 10%;
+    height: 250px;
+  }
+  .card{
+    width: (84%/4);
+    margin: 0 2%;
     float: left;
-    height: 300px;
+    height: 100%;
     background: #fff;
+    box-sizing: border-box;
+    padding: 20px;
+    border-bottom: 5px solid $yellow;
   }
-  .car img{
-    width: 80%;
-    position: relative;
-    margin: 0 10%;
-    top: -120px;
+  h3{
+    text-align: center;
+    color: $blue;
+  }
+  p{
+    text-align: center;
+    padding: 20px;
   }
 }
 
 #cities{
   width: 100%;
-  height: 700px;
+  height: 550px;
   h2{
     width: 100%;
     text-align: center;
@@ -462,11 +502,11 @@ header{
     margin: 5px auto 20px auto;
   }
   .card{
-    width: (76%/3);
-    margin: 4%;
+    width: (76%/4);
+    margin: 3%;
     border-radius: 10px;
     float: left;
-    height: 400px;
+    height: 300px;
     img{
       width: 90%;
       padding: 5%;
@@ -479,7 +519,7 @@ header{
 }
 #why{
   width: 100%;
-  height: 500px;
+  height: 435px;
   h2{
     width: 100%;
     text-align: center;
@@ -524,8 +564,8 @@ footer{
     padding: 20px;
     color: #fff;
   }
-  .social, .links, .contact{
-    width: (100%/3);
+  .social, .links, .contact, .newsletter{
+    width: (100%/4);
     height: 330px;
     box-sizing: border-box;
     padding: 30px;
@@ -535,6 +575,30 @@ footer{
       text-align: center;
       color: #fff;
       font-size: 25px;
+    }
+  }
+  .newsletter{
+    p{
+      color: #fff;
+      padding-top: 10px;
+      float: left;
+    }
+    input{
+      width: 100%;
+      border: 0;
+      padding: 5px 10px;
+      margin: 0;
+      box-sizing: border-box;
+      float: left;
+      font-size: 18px;
+    }
+    input[type=submit]{
+      background: $blue;
+      color: #fff;
+      cursor: pointer;
+    }
+    form{
+      margin-top: 20px;
     }
   }
   .social{
@@ -561,6 +625,8 @@ footer{
       list-style-type: none;
       padding: 5px;
       display: inline-block;
+      float: left;
+      width: 100%;
     }
     a{
       color: #fff;
@@ -672,21 +738,13 @@ footer{
     display: none;
   }
   .btnhlder{
-    width: 240px;
+    width: 90%;
     display: block;
-    margin: 80px auto auto auto;
-  }
-  button{
-    border: 0;
-    background: $yellow;
-    padding: 5px 10px;
-    color: #000;
-    cursor: pointer;
-    font-size: 25px;
-    font-weight: 600;
-    border-radius: 10px;
-    width: 100%;
-    text-align: center;
+    margin: 50px 5% 0 5%;
+    button{
+      width: 90%;
+      margin: 5%;
+    }
   }
   #topCars{
     height: 1500px;
@@ -700,12 +758,7 @@ footer{
     }
   }
   #features{
-    .vlineHolder{
-      display: none;
-    }
-    .car img{
-      display: none;
-    }
+
   }
   #cities {
     height: 1450px;
@@ -724,11 +777,14 @@ footer{
   }
   footer{
     height: 1020px;
-    .social, .links, .contact{
+    .social, .links, .contact, .newsletter{
       width: 100%;
     }
+    .newsletter{
+      height: 150px;
+    }
     .upperfooter{
-      height: 950px;
+      height: 1080px;
     }
     .lowerfooter{
       height: 100px;
