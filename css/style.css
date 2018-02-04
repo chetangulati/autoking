@@ -253,7 +253,7 @@ header .menuBtn {
   #banner .filter {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); }
+    background: rgba(0, 0, 0, 0.2); }
   #banner .formHolder {
     width: 100%;
     position: absolute;
@@ -334,7 +334,7 @@ header .menuBtn {
     padding: 10px;
     font-size: 20px;
     float: left; }
-  .modal-head #close {
+  .modal-head .close {
     float: right;
     font-weight: 400;
     padding: 10px 15px;
@@ -641,17 +641,19 @@ footer {
     position: fixed;
     width: 100%; }
 
-  #banner .tagLine {
-    padding-top: 80px;
-    font-size: 50px; }
-  #banner form {
-    margin: 20px 10%;
-    float: left; }
-  #banner input {
-    width: 90%;
-    border: 1px solid #aaa;
-    border-radius: 10px;
-    margin: 10px 5%; }
+  #banner {
+    background-image: url("../images/bannermob.jpg"); }
+    #banner .tagLine {
+      padding-top: 80px;
+      font-size: 50px; }
+    #banner form {
+      margin: 20px 10%;
+      float: left; }
+    #banner input {
+      width: 90%;
+      border: 1px solid #aaa;
+      border-radius: 10px;
+      margin: 10px 5%; }
 
   .formHolder {
     display: none; }

@@ -11,9 +11,13 @@ $('#filterSideNav').click(function (e) {
   sideNav();
 });
 $('#modalBtntwo').click(function () {
-  $(".bookingModal").addClass('active');
+  $("#two").addClass('active');
 });
-$("#close").click(function () {
+$('#modalBtnfour').click(function () {
+  $("#four").addClass('active');
+});
+
+$(".close").click(function () {
   $(".bookingModal").removeClass('active');
 })
 $('#modalBtnfour').click(function () {
