@@ -452,11 +452,15 @@ header .menuBtn {
     height: 5px;
     background: #FFC600;
     margin: 5px auto 20px auto; }
+  #cities .cardHolder {
+    width: 1200px;
+    margin: auto;
+    height: 100%; }
   #cities .card {
-    width: 19%;
+    width: 18%;
     margin: 3%;
     border-radius: 10px;
-    float: left;
+    display: inline-block;
     height: 300px; }
     #cities .card img {
       width: 90%;
@@ -611,7 +615,20 @@ footer {
     width: 90%; }
 
   #features .vlineHolder {
-    width: 90%; } }
+    width: 90%; }
+  #features .cardHolder {
+    width: 95%;
+    margin: 50px 2.5%; }
+  #features .card {
+    width: 23%;
+    margin: 0 1%; }
+
+  #cities .cardHolder {
+    width: 768px; }
+  #cities .card {
+    width: 22%;
+    margin: 1%;
+    height: 215px; } }
 @media only screen and (max-width: 767px) {
   .pcHead {
     display: none; }
@@ -659,14 +676,18 @@ footer {
   #features {
     height: 1250px; }
     #features .card {
-      width: 100%;
+      width: 96%;
       margin: 2%; }
 
   #cities {
     height: 1450px; }
+    #cities .cardHolder {
+      width: 100%; }
     #cities .card {
-      width: 80%;
-      margin: 10%; }
+      width: 250px;
+      margin: 30px auto;
+      display: block;
+      height: 300px; }
 
   #why .left, #why .right {
     float: right;

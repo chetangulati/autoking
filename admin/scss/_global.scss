@@ -53,3 +53,16 @@ body.fixed-nav {
     font-weight: 800;
   }
 }
+.last{
+  float: right;
+  button{
+    width: 120px;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    background: $blue;
+  }
+}

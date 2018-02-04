@@ -244,3 +244,14 @@ body{
     }
   }
 }
+#book{
+  table{
+    width: 95%;
+    margin: 2.5%;
+    border-collapse: collapse;
+  }
+  th, td{
+    padding: 5px;
+    border: 1px solid #aaa;
+  }
+}

@@ -35,6 +35,18 @@ body.fixed-nav {
   .scroll-to-top i {
     font-weight: 800; }
 
+.last {
+  float: right; }
+  .last button {
+    width: 120px;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    background: #007bff; }
+
 .smaller {
   font-size: 0.7rem; }
 

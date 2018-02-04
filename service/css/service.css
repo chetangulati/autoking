@@ -220,4 +220,12 @@ body {
       padding: 20px;
       color: #aaa; }
 
+#book table {
+  width: 95%;
+  margin: 2.5%;
+  border-collapse: collapse; }
+#book th, #book td {
+  padding: 5px;
+  border: 1px solid #aaa; }
+
 /*# sourceMappingURL=service.css.map */
