@@ -25,6 +25,9 @@
 body {
   font-family: 'Exo 2', sans-serif; }
 
+#mobNav {
+  display: none; }
+
 #sideNav {
   width: 20%;
   position: fixed;
@@ -220,12 +223,34 @@ body {
       padding: 20px;
       color: #aaa; }
 
-#book table {
-  width: 95%;
-  margin: 2.5%;
-  border-collapse: collapse; }
-#book th, #book td {
-  padding: 5px;
-  border: 1px solid #aaa; }
+#book {
+  width: 100%;
+  overflow-x: auto; }
+  #book table {
+    width: 970px;
+    margin: auto;
+    border-collapse: collapse; }
+  #book th, #book td {
+    padding: 5px;
+    border: 1px solid #aaa; }
+
+@media only screen and (max-width: 767px) {
+  #book {
+    height: calc(100vh - 75px);
+    overflow-y: auto;
+    overflow-x: auto; }
+
+  #mobNav {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: #0091AA; }
+
+  #sideNav {
+    display: none; }
+
+  #content {
+    left: 0;
+    width: 100%; } }
 
 /*# sourceMappingURL=service.css.map */

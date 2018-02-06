@@ -7,6 +7,9 @@
 body{
   font-family: 'Exo 2', sans-serif;
 }
+#mobNav{
+  display: none;
+}
 #sideNav{
   width: 20%;
   position: fixed;
@@ -245,13 +248,35 @@ body{
   }
 }
 #book{
+  width: 100%;
+  overflow-x: auto;
   table{
-    width: 95%;
-    margin: 2.5%;
+    width: 970px;
+    margin: auto;
     border-collapse: collapse;
   }
   th, td{
     padding: 5px;
     border: 1px solid #aaa;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #book{
+    height: calc(100vh - 75px);
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+  #mobNav{
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: $blue;
+  }
+  #sideNav{
+    display: none;
+  }
+  #content{
+    left:0;
+    width: 100%;
   }
 }

@@ -1,0 +1,59 @@
+@import "var.scss";
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Exo 2', sans-serif;
+}
+body{
+  background: #fafafa;
+}
+header{
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  background: #fff;
+  z-index: 100;
+  img{
+    width: 90px;
+    padding: 5px;
+    margin-left: 10px;
+  }
+}
+#sideNav{
+  width: 20%;
+  position: fixed;
+  height: 100vh;
+  background: lighten(#282C34, 10%);
+  z-index: 99;
+  .user{
+    width: 100%;
+    height: 200px;
+    padding-top: 70px;
+  }
+  .uimg{
+    width: 110px;
+    margin: auto;
+    padding: 5px;
+  }
+  .uemail{
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+  }
+  img{
+    width: 100%;
+    border-radius: 100%;
+    padding: 7px;
+    box-sizing: border-box;
+    background: lighten(#282C34, 30%);
+  }
+  .list{
+    padding-top: 30px;
+    width: 100%;
+    ul{
+      width: 100%;
+      list-style-type: none;
+    }
+  }
+}
