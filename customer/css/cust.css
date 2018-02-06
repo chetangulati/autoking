@@ -35,7 +35,12 @@ header {
   header img {
     width: 90px;
     padding: 5px;
+    float: left;
     margin-left: 10px; }
+  header h1 {
+    float: left;
+    padding: 10px;
+    color: #333; }
 
 #sideNav {
   width: 20%;
@@ -66,6 +71,105 @@ header {
     width: 100%; }
     #sideNav .list ul {
       width: 100%;
-      list-style-type: none; }
+      list-style-type: none;
+      padding-top: 50px; }
+      #sideNav .list ul .icon {
+        padding: 0 10px; }
+    #sideNav .list li {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px;
+      -webkit-user-select: none;
+      cursor: pointer;
+      color: #aaa; }
+      #sideNav .list li.active {
+        background: #545d6e;
+        color: #fff;
+        border-left: 3px solid #fff; }
+
+#content {
+  width: 80%;
+  position: relative;
+  left: 20%;
+  top: 80px; }
+
+.btn {
+  border: 0;
+  background: #0091AA;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer; }
+
+.tab {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  display: none; }
+  .tab.active {
+    display: block; }
+
+#book .cardHolder {
+  width: 100%;
+  margin-top: 20px; }
+#book .card {
+  width: 29.33333%;
+  margin: 2%;
+  height: 200px;
+  float: left;
+  background: #fff; }
+#book h2, #book p {
+  padding-top: 20px;
+  text-align: center;
+  width: 100%;
+  color: #000; }
+
+#pastServices .list {
+  width: 100; }
+#pastServices .listItem {
+  width: 100%;
+  cursor: pointer;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 10px 50px;
+  z-index: 2;
+  background: #fff; }
+  #pastServices .listItem .veh {
+    float: left; }
+  #pastServices .listItem .date {
+    float: left;
+    padding-left: 50px; }
+  #pastServices .listItem .icon {
+    float: right;
+    padding-top: 5px; }
+#pastServices .listdetail {
+  width: 100%;
+  min-height: 200px;
+  background: #eee;
+  z-index: 1;
+  margin-bottom: 10px; }
+  #pastServices .listdetail::after {
+    content: 'Here we will have the details of the services'; }
+
+#feedback textarea {
+  margin: 20px 0;
+  resize: none;
+  width: 500px;
+  height: 100px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box; }
+#feedback textarea:focus {
+  border: 1px solid #0091AA;
+  box-shadow: 0 0 4px 0px #0091AA; }
+
+#settings .card {
+  width: 45%;
+  height: 400px;
+  float: left;
+  margin: 10px 2.5%;
+  background: #fff; }
 
 /*# sourceMappingURL=cust.css.map */
