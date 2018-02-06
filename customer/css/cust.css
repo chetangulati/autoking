@@ -32,6 +32,8 @@ header {
   position: fixed;
   background: #fff;
   z-index: 100; }
+  header a {
+    float: left; }
   header img {
     width: 90px;
     padding: 5px;
@@ -41,6 +43,14 @@ header {
     float: left;
     padding: 10px;
     color: #333; }
+  header #menuBtn {
+    cursor: pointer;
+    float: left;
+    display: none;
+    padding: 5px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    margin: 13px 5px 0 13px; }
 
 #sideNav {
   width: 20%;
@@ -119,6 +129,10 @@ header {
   height: 200px;
   float: left;
   background: #fff; }
+#book .btnHlder {
+  width: 190px; }
+#book button {
+  width: 100%; }
 #book h2, #book p {
   padding-top: 20px;
   text-align: center;
@@ -171,5 +185,55 @@ header {
   float: left;
   margin: 10px 2.5%;
   background: #fff; }
+
+@media only screen and (max-width: 1000px) {
+  #sideNav {
+    width: 28%; }
+
+  #content {
+    width: 72%;
+    left: 28%; } }
+@media only screen and (max-width: 767px) {
+  header #menuBtn {
+    display: block; }
+  header img {
+    width: 80px;
+    margin-left: 0; }
+  header h1 {
+    display: none; }
+
+  #sideNav {
+    width: 100%;
+    left: -100%;
+    z-index: 2;
+    transition: 100ms all ease-in;
+    -webkit-transition: 100ms all ease-in;
+    -moz-transition: 100ms all ease-in; }
+    #sideNav .list ul {
+      padding-top: 0; }
+    #sideNav .uimg {
+      width: 70px; }
+    #sideNav.open {
+      left: 0;
+      transition: 100ms all ease-in;
+      -webkit-transition: 100ms all ease-in;
+      -moz-transition: 100ms all ease-in; }
+
+  #content {
+    width: 100%;
+    left: 0;
+    top: 60px;
+    z-index: 1; }
+
+  #book .select {
+    padding: 0; }
+  #book .btnHlder {
+    margin: auto;
+    padding-top: 10px; }
+  #book .card {
+    width: 96%; }
+
+  #feedback textarea {
+    width: 100%; } }
 
 /*# sourceMappingURL=cust.css.map */
