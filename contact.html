@@ -12,6 +12,9 @@
         width: 50%;
         float: left;
       }
+      .mobHead{
+        z-index: 100;
+      }
       .card{
         width: 80%;
         margin: 10%;
@@ -31,7 +34,8 @@
       }
       #banner form {
   width: 80%;
-  margin: auto;
+  margin: 0 10%;
+  overflow: hidden;
   padding-top: 50px; }
   #banner form input, #banner form textarea {
     float: left;
@@ -67,8 +71,19 @@
       float: left;
       padding: 10px 30px;
     }
-    h2{
-
+    @media only screen and (max-width: 767px) {
+      body{
+        /*over*/
+      }
+      .icon{
+        padding: 0;
+      }
+      .contact{
+        width: 100%;
+      }
+      #banner{
+        height: 1080px;
+      }
     }
 
     </style>
